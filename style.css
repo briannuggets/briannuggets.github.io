@@ -2,7 +2,6 @@
 ------------------------------------*/
 :root {
   font-size: 100%;
-  --banner-size: 1em;
 }
 
 html {
@@ -12,7 +11,7 @@ html {
 /* Add background and font */
 body {
     color: #343434;
-    padding-top: var(--banner-size);
+    padding-top: 2em;
     font-family:'Arial', sans-serif;
     font-size: 1em;
     line-height: 1.5;
