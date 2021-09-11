@@ -1,86 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Resume</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <div id="page-banner">
-      <header>
-        <img src="data:image/png;base64,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" alt="Virginia Tech Logo">
-        <h1 id="title">Brian Nguyen</h1>
-        <nav>
-          <a href="#contact-info">Contact Me</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </header>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="education" class="credential-container">
+    <h2 class="section-header">Education</h2>
+    <ul>
+        <li>Virginia Tech Cum Laude Dual Degrees Graduate - May 2012</li>
+        <ul>
+            <li>Bachelor of Science - Computer Science, Minor – Math</li>
+            <li>Bachelor of Arts – Music Performance Flute</li>
+        </ul>
+        <li>Masters in Computer Science at Virginia Tech – May 2015</li>
+        <li>PhD in Computer Science at Virginia Tech – July 2020</li>
+    </ul>
+</section>
+<section id="skills" class="credential-container">
+    <h2 id="skills-header" class="section-header">Skills/Qualifications</h2>
+    <div id="programming-languages" class="skills-wrapper">
+        <h3 class="subsec-header skill-sec">Programming Languages</h3>
+        <ul class="skill-list program-skills">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>VBA    Javascript</li>
+            <li>C#</li>
+            <li>MATLAB</li>
+            <li>R</li>
+        </ul>
     </div>
-    <section id="contact-info" class="contact">
-      <h2 class="section-header">Contact Me</h2>
-      <address id="home-address" class="address">
-        <b class="sub-header">Home Address</b>
-        <p class="street">1207 Park Place Dr.</p>
-        <p>
-          <span class="city">Blacksburg</span>
-          <span class="state">VA</span>
-          <span class="zip">24060</span>
-        </p>
-      </address>
-      <address id="email-address" class="email">
-        <b class="sub-header">Email</b>
-        <a href="mailto:bpnguyen@vt.edu">bpnguyen@vt.edu</a>
-      </address>
-      <address id="phone-number" class="phone">
-        <b class="sub-header">Phone Number</b>
-        <a href="tel:123-456-7890">123-456-7890</a>
-      </address>
-    </section>
-    <section id="education" class="credentials">
-      <h2 class="section-header">Education</h2>
-      <ul>
-        <li>Virginia Tech - Expected Graduation: May 2022</li>
-        <li>
-          <ul>
-            <li>Computer Science, Senior</li>
-            <li>In-major GPA: 3.28</li>
-          </ul>
-        </li>
-        <li>Brentsville District High School - May 2018</li>
-      </ul>
-    </section>
-    <section id="experience" class="credentials">
-      <h2 class="section-header">Experience</h2>
-      <ul>
-        <li>CACI Virtual Internship - Summer 2021</li>
-        <li>Virginia Tech Drone Team - Fall 2020</li>
-        <li>Virginia Tech Wind Turbine Team - Fall 2019</li>
-      </ul>
-    </section>
-    <section id="skills" class="credentials">
-      <h2 class="section-header">Skills</h2>
-      <div id="programming-languages">
-        <h3 class="sub-header skill-sec">Programming Languages</h3>
-        <ul class="skill-list">
-          <li>Java</li>
-          <li>C</li>
-          <li>Python</li>
-          <li>Swift</li>
-          <li>MATLAB</li>
+    <div id="computer-skills" class="skills-wrapper">
+        <h3 class="subsec-header skill-sec">Computer Skills</h3>
+        <ul class="skill-list soft-skills">
+            <li>Numerical Methods</li>
+            <li>GUI programming</li>
+            <li>MPICH2</li>
+            <li>POSIX Threads</li>
+            <li>CUDA </li>
+            <li>OpenMP</li>
+            <li>Object Oriented Programming</li>
+            <li>Regular Expressions</li>
         </ul>
-      </div>
-      <div id="computer-skills">
-        <h3 class="sub-header skill-sec">Computer Skills</h3>
-        <ul class="skill-list">
-          <li>iOS Mobile Development</li>
-          <li>Object Oriented Programming</li>
-          <li>Web Development</li>
-          <li>User Interface and Design</li>
-          <li>Database Management</li>
-        </ul>
-      </div>
-    </section>
-  </body>
+    </div>
+</section>
+</body>
 </html>
